@@ -4,8 +4,15 @@
   "description": "Домашнее задание к лекции «Unit-тестирование»",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint",
-    "test": "jest --coverage"
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint .",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist"
   },
   "repository": {
     "type": "git",
