@@ -1,11 +1,13 @@
-export function calculateLife(lifes) {
-    if (lifes.health > 50) {
-        return 'green';
-    }
-    else if (lifes.health < 50 && lifes.health > 15) {
-        return 'yellow';
-    }
-    else if (lifes.health < 15) {
-        return 'red';
-    }
+export default function calculateLife(lifes) {
+  let result;
+  if (lifes.health > 50) {
+    result = 'green';
+  }
+  if (lifes.health < 50 && lifes.health > 15) {
+    result = 'yellow';
+  }
+  if (lifes.health < 15) {
+    result = 'red';
+  }
+  return result;
 }
