@@ -1,7 +1,7 @@
 import calculateLife from '../app.js';
 
-let test;
-let expect;
+// let test;
+// let expect;
 test('calculateLifeGreen', () => {
   const person = {
     name: 'Маг',
